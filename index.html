@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W'bal Pro - Data Field Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .formula {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1F2937; /* bg-gray-800 */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #93C5FD; /* text-blue-300 */
+        }
+        /* Styles for the visual guide labels */
+        .guide-label {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            border: 1px solid #06B6D4; /* cyan-500 */
+            white-space: nowrap;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <div class="container mx-auto px-4 py-12">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">W'bal Pro Data Field</h1>
+            <p class="text-lg md:text-xl text-cyan-400 max-w-3xl mx-auto">Your Complete Guide to Running with Power and Advanced Metrics</p>
+        </header>
+
+        <!-- Main Purpose Section -->
+        <section id="purpose" class="mb-20 max-w-4xl mx-auto bg-gray-800 rounded-lg p-8 border border-gray-700">
+            <h2 class="text-3xl font-bold text-white text-center mb-6">The Purpose of W'bal Pro</h2>
+            <p class="text-lg mb-4">
+                W'bal Pro transforms your Garmin watch into an advanced running power meter without needing an expensive footpod. By using data from your watch's GPS, barometer, and heart rate monitor, it provides real-time power metrics that are essential for serious training and racing.
+            </p>
+            <p class="text-lg">
+                The core concept is the <strong class="text-cyan-400">W' Prime Balance (W'bal)</strong>, which is visualized as a battery. This represents your anaerobic energy reserve—the energy you use for intense efforts like sprints or climbing steep hills. W'bal Pro helps you manage this energy perfectly, so you can push your limits without "bonking" before the finish line. It's designed for runners who want to train smarter, pace their races better, and understand their performance on a deeper level.
+            </p>
+        </section>
+
+        <!-- Visual Layout Section -->
+        <section id="layout" class="mb-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Data Field Layout</h2>
+            <div class="relative w-full max-w-sm mx-auto bg-gray-800 rounded-lg p-4 border border-gray-700">
+                
+                <!-- 
+                  INSTRUCTION: 
+                  1. Follow the guide to host your image on GitHub Pages.
+                  2. Get your image link (e.g., https://your-username.github.io/garmin-assets/WbalPro_fr935.jpg).
+                  3. Replace the placeholder link below with your actual link.
+                -->
+                <img src="https://placehold.co/400x400/111827/7DD3FC?text=Replace+this+link" alt="Datafield Snapshot on a Garmin Forerunner 935" class="rounded-md w-full">
+                
+                <!-- Labels for the snapshot -->
+                <!-- Top Row -->
+                <div class="guide-label" style="top: 25%; left: 29%; transform: translateX(-50%);">GAP</div>
+                <div class="guide-label" style="top: 25%; left: 50%; transform: translateX(-50%);">HR</div>
+                <div class="guide-label" style="top: 25%; left: 71%; transform: translateX(-50%);">VO2</div>
+
+                <!-- Middle Row -->
+                <div class="guide-label" style="top: 50%; left: 18%; transform: translateY(-50%);">PF5</div>
+                <div class="guide-label" style="top: 50%; right: 15%; transform: translateY(-50%);">W'bal</div>
+                
+                <!-- Bottom Row -->
+                <div class="guide-label" style="bottom: 25%; left: 29%; transform: translateX(-50%);">P3</div>
+                <div class="guide-label" style="bottom: 25%; left: 50%; transform: translateX(-50%);">P10</div>
+                <div class="guide-label" style="bottom: 25%; left: 71%; transform: translateX(-50%);">P20</div>
+                
+                <!-- Center Labels -->
+                <div class="absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <div class="guide-label" style="position: static; transform: none; display: inline-block; background: none; border: none; font-size: 1.2rem; font-weight: bold;">Total Power</div>
+                    <div class="guide-label" style="position: static; transform: none; display: inline-block; background: none; border: none; font-size: 0.7rem; margin-top: 15px;">W'bal Battery</div>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-4">
+                Note: Your data field may show slightly different labels (e.g., "Apwr" or "P180") depending on the version. This guide refers to the latest version.
+            </p>
+        </section>
+
+        <!-- Displayed Metrics Section -->
+        <section id="displayed-metrics">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Understanding the Displayed Metrics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Total Power -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Total Power (W)</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">This is the main, central number showing your current running power output in Watts. Unlike pace, which is affected by hills, or heart rate, which lags behind effort, power is an instantaneous and objective measure of how hard you are working.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">Simplified Formula:</p>
+                    <p><code class="formula">Power = Power to Run Flat + Power vs Wind + Power to Climb</code></p>
+                </div>
+
+                <!-- W'bal -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">W'bal (W' Balance)</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">Represented by the battery icon, this is your finite reserve of anaerobic energy, measured in Joules. When you run harder than your sustainable "Critical Power" (CP), you drain this battery. When you run easier, it recharges. It's the ultimate tool for race pacing and interval training.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">Simplified Formula:</p>
+                    <p><code class="formula">If Power > CP, drain energy. If Power < CP, recharge energy.</code></p>
+                </div>
+
+                <!-- GAP -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">GAP (Grade Adjusted Pace)</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">This metric tells you what your pace would be if you were running on a completely flat surface. It allows you to maintain a consistent effort level when running on rolling hills, preventing you from overexerting on climbs or slacking off on descents.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">Simplified Formula:</p>
+                    <p><code class="formula">Adjusted Speed = Current Speed × Grade Factor</code></p>
+                </div>
+
+                <!-- VO2 (Average VO2max) -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">VO2 (Average VO2max)</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">An ongoing estimate of your VO2max, a key indicator of your aerobic fitness. It represents the maximum amount of oxygen your body can use during intense exercise. Tracking this average can show fitness trends over time.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">Simplified Formula:</p>
+                    <p><code class="formula">VO2max ≈ (Power per kg) / (% of Max Heart Rate)</code></p>
+                </div>
+                
+                <!-- PF5 (Performance Factor) -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">PF5 (Performance Factor)</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">A comprehensive score of your running efficiency and performance for the current activity. It combines your power, speed, and cardiovascular response to give a single number. It is excellent for comparing different runs to see if your fitness is improving.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">Simplified Formula:</p>
+                    <p><code class="formula">Performance ≈ (Speed² × Power / Adjusted HR²) × Distance Factor</code></p>
+                </div>
+
+                <!-- P3 / P10 / P20 -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">P3 / P10 / P20</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">Your moving average power outputs over the last 3, 10, and 20 minutes. These are crucial for pacing. For example, in a 10k race, you might target a specific P10 value. They also help you set new personal records for power over those durations.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">How it's calculated:</p>
+                    <p>It uses an exponential moving average, which constantly updates and gives more weight to your most recent power data within that time window.</p>
+                </div>
+
+                <!-- HR_Temp is missing from this screenshot but explained here -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 md:col-span-2">
+                    <h3 class="text-2xl font-semibold text-white mb-3">HR_Temp (Temperature-Adjusted HR)</h3>
+                    <p class="font-semibold text-cyan-400 mb-2">What it is:</p>
+                    <p class="mb-4">While not visible in this particular screenshot layout, some versions of W'bal Pro display HR_Temp. This is your Temperature-Adjusted Heart Rate. It estimates what your HR would be under neutral temperature conditions (e.g., 15°C / 59°F). This helps normalize metrics that use HR, like PF5, making them more comparable across runs in different weather.</p>
+                    <p class="font-semibold text-cyan-400 mb-2">Simplified Formula:</p>
+                    <p><code class="formula">Adjusted HR = Current HR × Temperature Correction Factor</code></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Hidden Metrics Section -->
+        <section id="hidden-metrics" class="mt-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Behind the Scenes: Other Calculations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Slope -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Slope (%)</h3>
+                    <p>Calculated from GPS and barometric altitude changes over distance, this is the current gradient of the terrain. It's a critical input for calculating both your Total Power and your Grade Adjusted Pace.</p>
+                </div>
+
+                <!-- Relative Wind Speed -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Relative Wind</h3>
+                    <p>Using the manual wind settings you provide, the data field calculates the wind you are actually experiencing based on your speed and direction of travel. A headwind increases this value, while a tailwind decreases it. This is used to determine the power needed to overcome air resistance.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-20 pt-8 border-t border-gray-700">
+            <p class="text-gray-500">&copy; 2024 W'bal Pro Data Field. Train smarter.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
